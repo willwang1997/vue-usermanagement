@@ -39,7 +39,7 @@ export default {
     deleteCustmer(id) {
       this.$http
         .delete("http://localhost:3000/user/" + id)
-        .then(function(response) {
+        .then(function() {
           this.$router.push({
             path: "/",
             query: { alert: "删除信息成功" }
